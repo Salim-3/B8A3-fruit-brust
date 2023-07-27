@@ -36,7 +36,7 @@
 <body class="font-lato">
     <header class="md:container md:mx-auto">
         <nav>
-            <div class="navbar bg-base-100">
+            <div class="navbar bg-base-100 rounded-full bg-orange-600 text-slate-50 my-4">
                 <div class="navbar-start">
                     <div class="dropdown">
                         <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -46,25 +46,34 @@
                                     d="M4 6h16M4 12h8m-8 6h16" />
                             </svg>
                         </label>
-                        <ul tabindex="0"
+                        <ul tabindex="0" 
                             class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                             <li><a>Item 1</a></li>
-
-                            <a>Parent</a>
+                            <li><a>Item 1</a></li>
 
                         </ul>
                     </div>
-                    <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+                    <a class="btn btn-ghost normal-case text-xl">Home</a>
+                    <a class="btn btn-ghost normal-case text-xl">About Us</a>
+                    <a class="btn btn-ghost normal-case text-xl">Shop</a>
+                    <a class="btn btn-ghost normal-case text-xl">All Fruit</a>
+               
                 </div>
-                <div class="navbar-center hidden lg:flex">
+                <div class="navbar-center hidden lg:flex items-center">
                     <ul class="menu menu-horizontal px-1">
-                        <li><a>Item 1</a></li>
-                        <li tabindex="0">
+                        <li><a><img src="images/logo.png" alt=""></a></li>
+                        <li><a class="text-5xl font-bold text-center">Fruit Burst</a></li>
 
                     </ul>
                 </div>
-                <div class="navbar-end">
-                    <a class="btn">Button</a>
+                <div class="navbar-end py-8 px-12">
+                    <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs rounded-full" /> 
+                    <div class="-mx-8">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M20.9998 21L15.8028 15.803M15.8028 15.803C17.2094 14.3965 17.9996 12.4887 17.9996 10.4995C17.9996 8.51035 17.2094 6.60262 15.8028 5.19605C14.3962 3.78947 12.4885 2.99927 10.4993 2.99927C8.51011 2.99927 6.60238 3.78947 5.19581 5.19605C3.78923 6.60262 2.99902 8.51035 2.99902 10.4995C2.99902 12.4887 3.78923 14.3965 5.19581 15.803C6.60238 17.2096 8.51011 17.9998 10.4993 17.9998C12.4885 17.9998 14.3962 17.2096 15.8028 15.803Z" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+       
+                    </div>
                 </div>
             </div>
         </nav>
@@ -697,7 +706,8 @@
                               </svg>
                           </div>
                         </div>
-                    </div>                    <div class="flex  items-center gap-5 mt-12">
+                    </div>             
+                           <div class="flex  items-center gap-5 mt-12">
 
                         <div>
                             <h6 class="text-2xl font-extrabold -mb-3">Gift Certificates</h6>
